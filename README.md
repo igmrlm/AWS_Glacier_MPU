@@ -13,7 +13,7 @@ Example:
 
 python MultipartUpload.py 'large_file.zip' 16 MyGlacierVault
 
-5. The program will split the file, calculate the tree hash, upload the parts, and generate a CSV log (`MyGlacierVault.csv`) containing archive IDs, checksums, locations, original filenames, and upload timestamps.
+The program will split the file, calculate the tree hash, upload the parts, and generate a CSV log (`MyGlacierVault.csv`) containing archive IDs, checksums, locations, original filenames, and upload timestamps.
 
 ## Notes
 
