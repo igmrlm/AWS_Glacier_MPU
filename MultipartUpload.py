@@ -1,7 +1,6 @@
 import argparse
 import os
 import math
-import hashlib
 import botocore.utils
 import boto3
 import datetime 
