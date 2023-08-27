@@ -26,7 +26,7 @@ def upload_to_glacier(vault_name, upload_id, part_data, start_byte, end_byte):
     
 def save_to_csv(vault_name, archive_id, tree_hash, location, original_filename, upload_datetime):
     csv_filename = f"{vault_name}.csv"
-    header = "Archive ID,Checksum,Location,Original Filename,Upload Date & Time\n"
+    header = "Original Filename,Archive ID,Checksum,Location,Upload Date & Time\n"
 
     if not os.path.exists(csv_filename):
         with open(csv_filename, 'w') as csv_file:
