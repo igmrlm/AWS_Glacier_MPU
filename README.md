@@ -6,6 +6,7 @@ This Python program simplifies the process of splitting large files, calculating
 
 - Python 3.x
 - AWS CLI configured with appropriate credentials and default region
+- The python modules: argparse, math, botocore.utils, boto3, datetime 
 
 python MultipartUpload.py input_file part_size vault_name
 
