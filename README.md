@@ -10,7 +10,7 @@ This Python program simplifies the process of splitting large files, calculating
 
 python MultipartUpload.py input_file part_size vault_name
 
-Example:
+## Example:
 
 python MultipartUpload.py '/path/to/large_file.zip' 16 MyGlacierVault
 
