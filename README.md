@@ -12,13 +12,18 @@ python MultipartUpload.py input_file part_size vault_name
 
 Example:
 
-python MultipartUpload.py 'large_file.zip' 16 MyGlacierVault
+python MultipartUpload.py '/path/to/large_file.zip' 16 MyGlacierVault
+
+'/path/to/large_file.zip' -- The file you're uploading.
+16 -- The size in MiB of each piece.
+MyGlacierVault -- The vault you're storing the data in. 
+
 
 The program will split the file, calculate the tree hash, upload the parts, and generate a CSV log (`MyGlacierVault.csv`) containing archive IDs, checksums, locations, original filenames, and upload timestamps.
 
 ## Notes
 
-- Make sure your AWS CLI is configured correctly to allow access to Glacier.
+- Make sure your AWS CLI is already configured correctly to allow access to Glacier.
 - The program will generate a CSV log in the current directory.
 - The tree hash calculation uses AWS's `botocore.utils`.
 - The CSV log is useful for tracking uploads and managing your Glacier data.
