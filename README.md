@@ -15,8 +15,11 @@ Example:
 python MultipartUpload.py '/path/to/large_file.zip' 16 MyGlacierVault
 
 '/path/to/large_file.zip' -- The file you're uploading.
+
 16 -- The size in MiB of each piece.
+
 MyGlacierVault -- The vault you're storing the data in. 
+
 
 
 The program will split the file, calculate the tree hash, upload the parts, and generate a CSV log (`MyGlacierVault.csv`) containing archive IDs, checksums, locations, original filenames, and upload timestamps.
